@@ -53,7 +53,7 @@ chmod +x $build_dir/vendor/node/bin/*
 PATH=$PATH:$build_dir/vendor/node/bin
 
 # npm https errors fix.
-npm config set registry http://registry.npmjs.eu/
+npm config set strict-ssl false
 
 # Run subsequent node/npm commands from the build path
 cd $build_dir
